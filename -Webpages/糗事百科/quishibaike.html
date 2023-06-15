@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>quishibaike</title>
+  <style>
+   html,body,div,p ,ul,li{
+   	margin: 0;
+   	padding: 0;
+   }
+   h5 {
+    margin-top:5px; 
+    font-weight:normal;
+   }
+   .top {
+   	height:85px; 
+    background: #ffd52b;
+   }
+   .top-bar {
+   	width: 1200px;
+   	margin: 0 auto;
+   }
+   .top-logo {
+   	float:left;
+   	height: 70px;
+   	width: 200px;
+   	background: url("./icongroup.png") 210px 495px;
+   }
+   .top-text li {
+   	font-size: 18px;
+   	list-style:none;
+   	display: inline-block;/*把块元素变行元素*/
+   	margin: 0 0 0 15px;
+		padding: 30px 15px;	
+		color: #7a4624;	
+    cursor: pointer;
+   } 
+   .top-text li:hover{
+   	background: #ffe36f;
+   	color: #333;
+   }
+   .selected {
+   	border-bottom: 4px solid #7a4624;
+   	background: #ffe36f;
+   	color: #333;
+   }
+   .content {
+   	width: 1200px;
+   	margin: 0 auto;
+   }
+   .left,.right{
+   float: left;
+   }
+   .left1,.left2 {
+   width: 700px;
+   margin: 20px 2px 0 10px;
+   padding: 10px 20px;
+   background-color: #f5fffa;
+   }
+   .zhanghuan {  
+    float: left;
+    margin-top:10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+   }
+   .yonghum {
+    float: left;
+    margin-top:20px;
+    margin-left:10px; 
+    cursor: pointer;
+    color: #9b8878;
+   }
+   .yonghum:hover {
+    color: #333;
+   }
+   .dengji {
+    width: 44px;
+    height: 20px;
+    background: url("./dengji.png");
+    background-position: 396px 690px;
+    background-size: cover;
+    color: #fff;
+    float: right;
+    margin: -28px 530px;
+   }
+   .jishu {
+    font-size: 15px;
+    margin: 18px;
+   }
+   .neirong {
+    line-height: 1.8;
+    word-wrap: break-word;
+    margin-top: 70px;
+    font-size: 19px;
+   }
+   .chakan {
+   display: inline-block;
+    font-size: 12px;
+    border: 1px solid #fb0;
+    width: 58px;
+    text-align: center;
+    line-height: 24px;
+    color: #fb0;
+    cursor: pointer;
+   }
+   .pinglun {
+    margin-left:10px; 
+   }
+   .pinglun:hover {
+    cursor: pointer;
+    color: #9b8878;
+   }
+   .left-tb {
+    float: left;
+   }
+   .xiao {
+    float: left;
+    height: 20px;
+    width: 38px;
+    background: url("./icongroup.png") 224px 541px;
+    cursor: pointer;
+   }
+   .ku {
+    float: left;
+    margin-left: 10px;
+    height: 20px;
+    width: 38px;
+    background: url("./icongroup.png") 224px 517px;
+    cursor: pointer;
+   }
+   .taolun {
+    margin-left:100px; 
+    height: 20px;
+    width: 38px;
+    background: url("./icongroup.png") 224px 564px;
+    cursor: pointer;
+   }
+   .right-tb {
+    margin-right: -160px; 
+    float: right;
+   }
+   .weixin {
+    margin-right: 300px;
+    height: 20px;
+    width: 25px;
+    background: url("./icongroup.png") 209px 659px;
+    cursor: pointer;
+   }
+   .qq {
+    margin-left: 40px;
+    margin-top: -20px;
+    height: 20px;
+    width: 25px;
+    background: url("./icongroup.png") 209px 588px;
+    cursor: pointer;
+   }
+   .qqkongjian {
+    margin-left: 80px;
+    margin-top: -20px;
+    height: 20px;
+    width: 25px;
+    background: url("./icongroup.png") 209px 612px;
+    cursor: pointer;
+   }
+   .weibo {
+    margin-left: 120px;
+    margin-top: -20px;
+    height: 20px;
+    width: 25px;
+    background: url("./icongroup.png") 209px 637px;
+    cursor: pointer; 
+   }
+   .left1-down {
+    padding-top:50px;
+    cursor: pointer;  
+   }
+   .cmt-god {
+    float: left;
+    height: 20px;
+    width: 25px;
+    background: url("./cmt-god.png") 202px 674px;
+    background-size: cover;
+   }
+   .fangke {
+    color: #9b8878;
+    margin: 0 10px;
+    float: left;
+    font-size: 15px;
+   }
+   .pinglunnr {
+    float: left;
+    font-size: 15px; 
+   }
+   .zan {
+    height: 11px;
+   }
+   .zanshu {
+    font-size: 14px;
+    color: #a9a9a9;
+   }
+   .shichunyu {
+    float: left;
+    margin-top:10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+   }
+   .right1 {
+    border: 1px solid #ddd;   
+    margin: 20px 2px 0 10px;
+    padding: 10px 20px;     
+    height: 260px;
+    width: 330px;
+   }
+   .huan1 {
+    height: 110px;
+    width: 160px;
+   }
+   .huan2 {
+    height: 110px;
+    width: 160px;
+   }
+   .huan3 {
+    height: 110px;
+    width: 160px;
+   }
+   .huan4 {
+    height: 110px;
+    width: 160px;
+   }
+   .zhang1 {
+    margin-left: 50px;
+   }
+   .zhang2 {
+    margin-left:100px; 
+   }
+   .right2 {
+    border: 1px solid #ddd;   
+    margin: 20px 2px 0 10px;
+    padding: 10px 20px;     
+    height: 240px;
+    width: 330px;
+   }
+   .ultop {
+    margin-top: -5px;
+   }
+   .biaoqian li {
+    font-size: 18px;
+   }
+   .biaoqian span {
+    padding: 0 15px;
+   }
+   .biaoqian span:hover {
+    color: red;
+    cursor: pointer;
+   }
+  </style>
+</head>
+  <body>
+   <div class="top">
+   <div class="top-bar">
+    <div class="top-logo"></div>
+    <div class="top-text">
+    <ul>
+     <li class="selected">热门</li>
+     <li>24小时</li>
+     <li>热图</li>
+     <li>文字</li>
+     <li>穿越</li>
+     <li>糗图</li>
+     <li>新鲜</li>
+    </ul>
+   </div>
+   </div>
+   </div>
+   <div class="content">
+		<div class="left">
+     <div class="left1">
+      <p><img class="zhanghuan" src="./zhanghuan.png" alt="用户头像"></p>
+      <p class="yonghum">张环牛逼</p>
+      <p class="dengji"><span class="jishu">48</span></p>
+      <p class="neirong">    
+        一单身女子刚搬新家，晚上突然停电了。她刚要点蜡烛，门被敲响了,原来是隔壁
+        邻居家的小女孩儿。小女孩儿说：大姐姐，你家有蜡烛吗？她想：第一天就借蜡烛，
+        那以后还不没完没了？于是就说：没有!小女孩儿说：就知道你刚搬过来，肯定没
+        有，所以妈妈让我给你送一只蜡烛。她心里很惭愧。小女孩儿走后，她点燃了那只
+        带迷药的蜡烛，第二天就被卖到了山区给人当了媳妇儿。隔天她高兴地感叹：啊！
+        终于脱单了!那么问题来了：她是学什么专业的？
+      </p>
+      <h4 class="chakan">查看全文</h4>
+      <h5>1502好笑<span class="pinglun">66评论</span></h5>
+      <div class="left-tb">
+      <p class="xiao"></p>
+      <p class="ku"></p>
+      <p class="taolun"></p>
+      </div>
+      <div class="right-tb">
+      <p class="weixin"></p>
+      <p class="qq"></p>
+      <p class="qqkongjian"></p>
+      <p class="weibo"></p>
+      </div>
+      <div class="left1-down">
+        <p class="cmt-god"></p>
+        <p class="fangke">史春雨:</p>
+        <p class="pinglunnr">张环说的真TM好啊,他真是个人才啊！我真佩服他啊。</p>
+        <p><img class="zan" src="./dianzan.png"><span class="zanshu">10</span></p>
+      </div>
+     </div>
+     <div class="left2">
+      <p><img class="shichunyu" src="./shichunyu.png"></p>
+      <p class="yonghum">就是牛逼</p>
+      <p class="dengji"><span class="jishu">66</span></p>
+      <p class="neirong">
+        老婆洗完澡后都要在电子秤上称一下体重，胖了一点点就老大不高兴。
+        但以老婆停不下来的嘴巴，不胖是不可能的。
+        我冥思苦想得到一个好主意：过几天就把秤调一下。
+        老婆每天都很兴奋：“我又没有长胖，虽然我天天吃。”
+        今天晚上，老婆洗完澡，站到秤上，下来，把裙子和鞋子放到秤上秤一下，又站到秤上，再称鞋子和裙子，连续重复了好几次。
+        我纳闷她在干什么呢？
+        老婆衲衲地说：“奇怪，今天我体检时120斤，回来称却只有110斤，难道我的一件裙子和一双鞋子有10斤重吗？”
+      </p>
+     </div>
+    </div>
+		<div class="right">
+      <div class="right1">
+       <img class="huan1" src="./zhanghuan1.png">
+       <img class="huan2" src="./zhanghuan2.png">
+       <p class="zhang1">张环反串<span class="zhang2">张环喝酒</span></p>
+       <img class="huan3" src="./zhanghuan3.png">
+       <img class="huan4" src="./zhanghuan4.png">
+       <p class="zhang1">张环睡觉<span class="zhang2">张环上课</span></p>
+      </div>
+      <div class="right2">
+        <h3 class="ultop">热门笑话标签</h3>
+       <div >
+        <ul class="biaoqian">
+          <li><span>电子秤的价格</span><span>电子秤大全</span></li>
+          <li><span>电子秤报价</span><span>电子秤价格</span></li>
+          <li><span>电子秤厂家</span><span>学生管理系统</span></li>
+          <li><span>小孩正常身高</span><span >PMBOK</span><span>气垫BB</span></li>
+          <li><span>小孩发育标准</span><span>监控软件</span></li>
+          <li><span>离婚房产怎么办</span><span>html所有标签</span></li>
+          <li><span>需求分析</span><span>数据可视化工具</span></li>
+          <li><span>张环牛逼</span><span>张环666</span></li>
+        </ul>
+       </div>
+      </div>
+      <div class="right3"></div>
+   </div>
+   </div>
+   </body>
+</html>

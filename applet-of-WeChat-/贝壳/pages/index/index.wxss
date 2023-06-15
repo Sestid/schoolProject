@@ -1,0 +1,183 @@
+.body {
+  height: 10000px;
+  background: #f8f8f9;
+}
+.top {
+  width: 100%;
+  height: 150rpx;
+  background-color: #fff;
+}
+.top image {
+  padding: 25rpx 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.find1 {
+  position: absolute;
+  top: 30rpx;
+  font-weight: bold;
+}
+.find2 {
+  position: absolute;
+  top: 80rpx;
+  font-size: 30rpx;
+  color: #9399a5;
+}
+.top button {
+  position: absolute;
+  top: 40rpx;
+  right: 90rpx;
+  width: 190rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  background-color: #3072f6;
+  color: #fff;
+  border-radius:20rpx;
+}
+.header {
+  position: relative;
+  height: 450rpx;
+}
+.header .head-bg {
+  height: 450rpx; 
+}
+.header .word {
+  position: absolute;
+  top:100rpx;
+  left: 100rpx;
+  color: #fff;
+}
+.header .word .word1 {
+  line-height:  50rpx;
+  font-size:25rpx; 
+}
+.header .word .word2 {
+  display: block;
+  font-size: 60rpx;
+}
+.header .word .word3 {
+  font-size: 60rpx;
+}
+.icon_user {
+  position: absolute;
+  top:60rpx;
+  right: 70rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.search {
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.header input {
+  position: absolute;
+  bottom: -50rpx;
+  left: 75rpx;
+  background: #fff;
+  width: 500rpx;
+  height: 100rpx;
+  padding-left:100rpx; 
+  border-radius:70rpx;
+}
+.concent {
+  position: relative;
+  margin-top: 100rpx;
+ 
+}
+.concent image {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 50rpx 25rpx;
+  font-size: 35rpx;
+}
+.concent text {
+  font-size: 35rpx;
+  padding: 0 18rpx;
+}
+.mod-box {
+  margin-top: 80rpx; 
+  margin-left: 40rpx;
+}
+.mod-box .tool {
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.box image {
+  width: 80rpx;
+  height: 80rpx;
+  padding: 40rpx 62rpx 50rpx 0;
+}
+.box text {
+  font-size: 35rpx;
+}
+.mod-cont {
+  margin-top: 100rpx;
+  margin-left: 40rpx;
+}
+.mod-cont .recomment {
+  font-weight: bold;
+  float: left;
+}
+.fang {
+  float: right;
+  font-size: 30rpx;
+  margin-right:  70rpx;
+}
+.ershou-list {
+  display: inline-block;
+  color: blue;
+}
+.xinfang-list {
+  display: inline-block;
+  margin-left: 50rpx;
+}
+.zufang-list {
+  margin-left: 50rpx;
+  display: inline-block;
+}
+.fang-lists {
+  margin-top:150rpx; 
+  margin-left: 40rpx;
+}
+.flex-box {
+   position: relative;
+}
+.flex-box image {
+  /* display: inline-block; */
+  position: absolute;
+  top: 50rpx;
+  width: 240rpx;
+  height: 180rpx;
+}
+.box-right {
+  position: absolute;
+  top:50rpx;
+  left: 280rpx;
+  width: 350rpx;
+}
+.fang-name {
+  display: inline-block;
+}
+.fang-mianji {
+  display: inline-block;
+  font-size: 25rpx;
+  color:  #9399a5;
+}
+.fang-money {
+  display: inline-block;
+  color: red;
+}
+.fang-jiage {
+  
+  font-size: 25rpx;
+  color:  #9399a5;
+}
+.fang-biaoqian {
+  background-color: #f4f7f9;
+  color: #849aae;
+  font-size: 27rpx;
+  padding-right: 20rpx;
+}

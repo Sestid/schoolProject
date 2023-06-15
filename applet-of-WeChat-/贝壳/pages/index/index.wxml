@@ -1,0 +1,113 @@
+<view class='body'>
+  <view class="top">
+    <image src="./logo.png"></image>
+    <text class='find1'>{{find1}}</text>
+    <text class='find2'>{{find2}}</text>
+    <button>立即打开</button>
+  </view>
+  <view class='header'>
+    <image class='head-bg' src="./head_bg.jpg"></image>
+    <view class='word'>
+      <text class='word1'>二手/房租房/新房</text>
+      <text class='word2'>好房好服务</text>
+      <text class='word3'>买房上贝壳</text>
+    </view>
+    <image class='icon_user' src="./icon_user.png"></image>
+    <input placeholder='输入小区商圈开始找房喽~'>
+      <image class='search' src='./icon_search_grey.png'></image>
+    </input>
+  </view>
+  <view class='concent'>
+    <image src='./icon_ershoufang.png'>二手房</image>
+    <image src='./icon_zufang.png'><text>租房</text></image>
+    <image src='./icon_xinfang.png'><text>新房</text></image>
+    <image src='./icon_zhuangxiu.png'><text>装修</text></image>
+    <image src='./icon_haiwai.png'><text>海外</text></image>  
+  </view>
+  <view class='mod-box'>
+    <view class='tool'>常用工具</view>
+    <view class='box'>
+      <image src='./icon_maifang.png'><text>卖房</text></image>
+      <image src='./icon_b_xiaoqu.png'><text>找小区</text></image>
+      <image src='./icon_chengjiao.png'><text>查成交</text></image>
+      <image src='./icon_b_fangjia.png'><text>查房价</text></image>
+      <image src='./icon_b_gujia.png'><text>去估价</text></image>
+      <image src='./icon_b_jingjiren.png'><text>找经纪人</text></image>
+      <image src='./icon_b_wenda.png'><text>问答</text></image>
+      <image src='./icon_b_baike.png'><text>百科</text></image>
+      <image src='./icon_b_kefu.png'><text>客服电话</text></image>
+      <image src='./icon_goufang.png'><text>购房资质</text> </image>
+    </view> 
+  </view>
+  <view class='mod-cont'>
+    <view class='recomment'>为您推荐</view>
+    <!--点击出现对应-->
+  <view class='fang'>  
+    <view class='ershou-list' bindtap='toggleTag' data-index='0'>二手房</view> 
+    <view class='xinfang-list' bindtap='toggleTag' data-index='1'>新房</view>
+    <view class='zufang-list' bindtap='toggleTag' data-index='2'>租房</view>
+  </view>  
+  </view>
+  <view class='fang-lists'  wx:if="{{tab === 0}}">
+    <view class='flex-box'>
+      <image src='./test-9180bbbc-3a42-4a5c-8c82-624be1ab8a86.jpg'></image>
+      <view class='box-right'>
+        <text class='fang-name'>宋家庄庄园 2室1厅 南 高楼层</text>
+        <text class='fang-mianji'>2室1厅/南/69.32m/宋家</text>
+        <text class='fang-money'>888万</text>
+        <text class='fang-jiage'>43779元/p平</text>
+        <view>
+          <text class='fang-biaoqian'>满5年</text>
+          <text class='fang-biaoqian'>地铁</text>
+        </view>
+      </view>
+    </view>
+    <view class='flex-box'>
+      <image src='./test-9180bbbc-3a42-4a5c-8c82-624be1ab8a86.jpg'></image>
+      <view class='box-right'>
+        <text class='fang-name'>宋家庄庄园 2室1厅 南 高楼层</text>
+        <text class='fang-mianji'>2室1厅/南/69.32m/宋家</text>
+        <text class='fang-money'>888万</text>
+        <text class='fang-jiage'>43779元/p平</text>
+        <view>
+          <text class='fang-biaoqian'>满5年</text>
+          <text class='fang-biaoqian'>地铁</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+ <view class='fang-lists' wx:elif="{{tab === 1}}">
+    <view class='flex-box'>
+      <image src='./test-9180bbbc-3a42-4a5c-8c82-624be1ab8a86.jpg'></image>
+      <view class='box-right'>
+        <text class='fang-name'>张家庄庄园 2室1厅 南 高楼层</text>
+        <text class='fang-mianji'>2室1厅/南/69.32m/宋家</text>
+        <text class='fang-money'>305万</text>
+        <text class='fang-jiage'>66666元/p平</text>
+        <view>
+          <text class='fang-biaoqian'>满1年</text>
+          <text class='fang-biaoqian'>地铁</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+ <view class='fang-lists' wx:else>
+    <view class='flex-box'>
+      <image src='./test-9180bbbc-3a42-4a5c-8c82-624be1ab8a86.jpg'></image>
+      <view class='box-right'>
+        <text class='fang-name'>李家庄庄园 2室1厅 南 高楼层</text>
+        <text class='fang-mianji'>2室1厅/南/69.32m/李家</text>
+        <text class='fang-money'>666万</text>
+        <text class='fang-jiage'>43999元/p平</text>
+        <view>
+          <text class='fang-biaoqian'>满5年</text>
+          <text class='fang-biaoqian'>地铁</text>
+        </view>
+      </view>
+    </view>
+  </view>
+<!--点击出现对应界面-->
+
+</view>    

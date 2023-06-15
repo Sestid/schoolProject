@@ -1,0 +1,27 @@
+# Html-Css-Js-jQuery
+包括小米官网，hao123，W3c，拉勾网，糗事百科等用Html，Css，Js，jQuery实现的页面</br>
+<strong>小米官网（比较完整，功能性多）</strong><br/>
+1.第一部分截图：
+![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi1.png)
+2.隐藏商品列表显示：
+![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi2.png)
+3.商品列表：
+![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi3.png)
+<strong>---一、W3C:</strong></br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/W3c/W3c.png)</br>
+<strong>---二、hao123:</strong></br>
+1.主页面：</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/hao123/hao1.png)</br>
+2.导航菜单显示：</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/hao123/hao2.png)</br>
+3.切换界面：</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/hao123/hao3.png)</br>
+<strong>---三、拉勾网:</strong></br>
+1.上部分页面:</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/%E6%8B%89%E5%8B%BE%E7%BD%91/lagou1.png)
+2.隐藏职位列表:</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/%E6%8B%89%E5%8B%BE%E7%BD%91/lagou2.png)
+3.热门职位列表:</br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/%E6%8B%89%E5%8B%BE%E7%BD%91/lagou3.png)
+<strong>---四、糗事百科（恶搞）:</strong></br>
+![image](https://github.com/xiaola66/-Webpages/blob/master/%E7%B3%97%E4%BA%8B%E7%99%BE%E7%A7%91/quishibaike.png)

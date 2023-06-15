@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			 <!--设置页面的编码格式-->
+		<title>W3c</title>
+		<style>
+			ul,li,h5,h2，/*去掉浏览器默认的空白地方*/{
+				margin: 0;/*外补白*/
+				padding: 0;/*内部白*//*1*/
+			}
+			div {
+				display: block;
+			}
+			.code-text p{
+				margin: 0;
+				padding: 0;
+			}
+			.logo {
+				margin: 0 auto;
+				height: 80px;
+				width: 1000px;
+			}
+			.top-logo{
+				height: 80px;
+				width: 300px;
+				margin: 0 auto;
+				display: inline-block;
+				background: url("./bg.png") 0 -160px;
+			}
+			.top-logo:hover{
+				background: url("./bg.png") 0 -260px;
+			}			
+			.right-logo{
+				height: 80px;
+				width: 700px;
+				float: right;
+				background: url("./right-logo.png") ;
+			}
+			.top-bar{
+				width: 1000px;
+				margin: 10px auto;/*有宽度的元素能用auto*/
+				background: #ddd;
+			}
+			.top-bar li{
+				list-style:none;/*去掉ul前的点*/
+				display: inline-block;/*把块元素变行元素*/
+				padding: 15px 20px;
+				font-size: 18px;/*字体大小*/
+			}
+			.top-bar li:hover{
+				background: #808080;
+				color: #fff;
+			}
+			.selected{
+				background: #808080;
+				color: #fff;
+			}
+			.content{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.left,.center,.right{
+				float: left;
+				float: center;
+				border: 1px solid #ddd;/*边缘属性  粗细：1px，样式：solid(实心线)*/
+				height: 1000px;
+			}
+			.left{
+				width: 180px
+			}
+			.center{
+				border: none;
+				width: 595px;
+				margin: 0 20px;
+			}
+			.right{
+				width: 180px;
+			}
+			.left h4 {
+				margin: 0 auto;
+				font-weight: normal;
+				background: #ddd;
+				padding: 5px 45px;
+			}
+			.left h5 {
+				padding: 20px 0 7px 5px;
+
+			}
+			.left1 li{
+				font-size: 20px;		
+			}
+			.left3{ 
+				width: 100%;
+				padding: 1px 0;
+				font-size: 12px;
+			}
+			.left3  li{
+				padding: 5px 10px;
+			}
+			.left3 li:hover{
+				background: #808080;
+				color: #fff;
+			}
+			ul,.code-text li {
+				list-style:none;/*去掉无序列表ul前的点*/
+			}
+			.left5{
+				padding: 10px 20px;
+				font-size: 12px;
+			}
+			.left5 li{
+				padding: 7px;
+			}
+			.left5 li:hover{
+				background: #808080;
+				color: #fff;
+			}
+			.center h2 {
+				font-weight: normal;/*去掉字体加黑*/
+			  padding: 5px 0;
+			}	
+			.center h5 {
+				font-weight: normal;
+				margin: 10px 0;
+			}
+			.code-text {
+				border:1px dashed #785;/*dashed（虚线边框样式）*/
+				padding: 20px;
+				
+				background: #f5f5f5; 
+			}
+			.center5{
+				color: blue;
+				font-size: 15px;
+			}
+			.btn{
+				background: #E96868;
+				color:#fff;
+				border: none;
+				border-radius: 2px;/*加圆角*/
+			  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px, rgba(0, 0, 0, 0.24) 0px 1px 2px;/*box-shadow(阴影)，rgba(颜色)*/
+				padding: 10px 20px;		
+				cursor: pointer;
+			}
+			.btn:hover{
+				background: #a52a2a;
+			}		
+			.center table {
+				border-collapse: collapse;/**/
+				border: 1px solid #ddd;
+			}	
+			.center table th {
+				font-weight: normal;
+				padding: 20px;
+				background: #F5F5F5;
+				border: 1px solid #ddd;
+			}		
+			.center table td {
+				padding: 20px 30px;
+        background: #fdfcf8 no-repeat center;
+				border: 1px solid #ddd;
+			}
+			.right h4 {
+				margin: 0 auto;
+				text-align:center;
+				font-weight: normal;
+				background: #ddd;
+				padding: 5px 30px;
+			}
+		  .right-tu {
+				margin: 20px auto;
+				height: 64px;
+				width: 136px;
+				background: url("./bg.png") ;
+				background-position:0 500px;
+			}
+			.right-tu:hover{
+				background-position:0 436px;
+			}
+			.tu2 {
+				margin: 20px auto;
+				height: 64px;
+				width: 136px;
+				background: url("./bg.png") ;
+				background-position:-150px 500px;
+			}
+			.tu2:hover{
+				background-position:-150px 436px;
+			}
+      .tu3 {
+      	margin: 20px auto;
+				height: 64px;
+				width: 136px;
+				background: url("./bg.png") ;
+				background-position:-300px 500px;
+			}
+			.tu3:hover{
+				background-position:-300px 436px;
+			}				
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="logo">
+			<div class="top-logo"></div>
+			<div class="right-logo"></div>
+			</div>
+			<div class="top-bar">
+				<ul>
+				<li class="selected">HTML/CSS</li>
+				<li>Javascript</li>
+				<li>Server Side</li>
+				<li>ASP.NET</li>
+				<li>XML</li>
+				<li>Web services</li>
+				<li>Web Building</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+					<h4>课程表</h4>
+				<h5>参考手册</h5>
+				<ul class="left3">
+					<li>标签列表（字母排序）</li>
+					<li>标签列表（功能排序）</li>
+					<li>HTML 属性</li>
+					<li>HTML 事件</li>
+					<li>HTML 视频/音频</li>
+					<li>HTML 画布</li>
+					<li>HTML 文档类型</li>
+					<li>HTML 颜色名</li>
+					<li>HTML 字符集</li>
+					<li>HTML ASCll</li>
+					<li>HTML ISO-8859-1</li>
+					<li>HTML 符号</li>
+					<li>HTML URL编码</li>
+					<li>HTML 语言代码</li>
+					<li>HTTP 消息</li>
+					<li>HTTP 方法</li>					
+				</ul>
+				<ul>
+				<h4>HTML标签</h4>
+				<ul class="left5">
+					<li>!--</li>
+					<li>!DOCTYPE</li>
+					<li>a</li>
+					<li>abbr</li>
+					<li>acronym</li>
+					<li>address</li>
+					<li>applet</li>
+					<li>area</li>
+				</ul>	
+				</ul>				
+				</ul>
+			</div>
+			<div class="center">				
+				<h2>HTML  <<span>!--...</span>--> 标签</h2>	
+				<h4>实例</h4>
+				<h5>HTML 注释：</h5>				
+			<div class="code-text">
+				<li class="center5"><<span>!--这是一段注释。注释不会在浏览器中显示。</span>--></li>
+				<p><<span>p>这是一段普通的段落。<</span>/p></p>
+			</div>
+			<p>
+			<button class="btn">亲自试一试</button>
+			</p>
+			<hr />
+			<h4>浏览器支持</h4>
+			<table cellpadding="0" cellspacing="0">
+			 <thead>
+			  <tr>
+			   <th>IE</th>
+			   <th>Firefox</th>
+			   <th>Chrome</th>
+			   <th>Safari</th>
+			   <th>Opera</th>
+			  </tr>
+			 </thead>
+			  <tbody>
+			   <tr>
+          <td><img src="./t1.png" alt=""></td>
+          <td><img src="./t2.png" alt=""></td>
+          <td><img src="./t3.png" alt=""></td>
+          <td><img src="./t4.png" alt=""></td>
+          <td><img src="./t5.png" alt=""></td>
+			   </tr>
+			  </tbody>
+			</table>
+			</div>
+			<div class="right">
+			<h4>工具箱</h4>
+			<div class="right-tu"></div>
+			<div class="tu2"></div>
+			<div class="tu3"></div>
+			<h4>赞助商链接</h4>
+			</div>	
+	</body>
+</html>

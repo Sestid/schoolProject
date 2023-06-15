@@ -1,0 +1,27 @@
+<!--pages/index/index.wxml-->
+<view>当前数字是：{{num}}</view>
+  <button bindtap="add">加数字</button>
+  <button bindtap="cut">减数字</button>
+
+<view class="item" wx:for="{{list}}">  <!--渲染列表-->
+    <text class="name">姓名:{{item.name}}</text>
+    <text class="age">年龄:{{item.age}}</text>
+    <!--渲染列表-->
+    <button bindtap="delete" class="delete" data-name="{{item.name}}">删</button>
+    <button bindtap="showEditModal" class="delete"  data-index="{{index}}">改</button>
+</view>
+<view wx:if="{{editModalVisible}}" class="tip" bindtap="hideEditModal">
+    <view class="content" catch:tap="return">
+        姓名：<input bindinput="nameChange" value="{{listItem.name}}" />
+        年龄：<input bindinput="ageChange" value="{{listItem.age}}" />
+        <button bindtap="submit">确定</button>
+    </view>
+</view>
+
+
+<button   bindtap="getbtn">获取列表</button>
+<view wx:for="{{newlist}}">
+  <view>姓名：{{item.name}}</view>
+  <view>年龄：{{item.age}}</view>
+</view>
+

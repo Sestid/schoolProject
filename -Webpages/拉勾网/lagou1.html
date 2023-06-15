@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>拉勾网</title>
+	<script src="./jquery.js"></script>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+
+			}
+			.top {
+				width: 100%;
+				height: 30px;
+				background: #333;
+			}
+			.top-left img{	
+				float: left;			
+				padding-left: 110px; 
+				padding-top:5px; 
+			}
+			.top-left img:hover {
+				cursor: pointer;
+			}
+			.top-left {
+				padding-top: 2px;
+				float: left;			
+			}
+			.icon {
+				color: #00b38a;
+				font-size: 14px;				
+			}			
+			.lagouapp {
+				padding-right: 10px;
+				padding-left:8px;
+			}
+			.lagouapp:hover {
+				color: #08d7a2;
+				cursor: pointer;
+			}
+			.access {
+				border-left: 1px solid #5d5d5d;
+				color: #c4c3c3;
+				padding-left:12px; 
+				font-size: 14px;
+			}
+			.access:hover {
+				color: #fff;
+				cursor: pointer;
+			}
+			.top-right {
+				float: right;
+				padding-right:125px; 
+				padding-top: 4px;
+			}
+			.enter {
+				padding-right: 6px;
+				color: #c4c3c3;
+			}
+			.enter:hover{
+				color: #fff;
+				cursor: pointer;
+			}
+			.enrol {
+				padding-left:11px;
+				border-left: 1px solid #5d5d5d;
+				color: #c4c3c3;
+			}
+			.enrol:hover {
+				color: #fff;
+				cursor: pointer;
+			}
+			.top-bar {
+				height: 54px;
+    			border-top: 1px solid #d2d2d2;
+    			border-bottom: 1px solid #e5e5e5;
+    			background-color: #fafafa;
+    
+			}
+			.logo {
+				float: left;
+			}
+			.logo img {
+				float: left;
+				padding-top: 10px;
+				padding-left: 155px;
+			}
+			.suggestCity {
+			    color: #333;
+			    font-size: 18px;
+			    padding-top: 20px;
+			    padding-left: 10px;
+			    display: inline-block;		    
+			}
+			.changeCity {
+			    padding-left: 10px;
+				font-size: 12px;
+				color: #999;
+			}
+			.top-text li{
+				list-style: none;
+				display: inline-block;
+				font-size: 18px;
+				padding: 0 5px;
+				margin-left: 50px; 
+				line-height: 53px;
+				margin-top: -16px;
+				cursor: pointer;
+				color: #999;			
+			}
+			.top-text li:hover{
+				color: #333;
+				border-bottom: 2px solid #00b38a;				
+			}
+			.top-text-selected {
+				border-bottom: 2px solid #00b38a;					
+			}
+			.content-head {
+				background: #F2F5F4;
+				height: 135px;
+			}
+			.search-wrapper {
+				padding: 30px 0 28px;
+				margin-left: 290px; 
+			}	
+			.input-content {
+				width: 762px;
+				height: 20px;
+			    line-height: 20px;
+			    float: left;
+			    font-size: 16px;
+			    padding: 12px 16px;
+			    margin: 0;
+			    border: 1px solid #E8E8E8;
+			    border-right: 0;
+			}
+			.btn {
+				width: 142px;
+				height: 46px;
+			    font-size: 18px;
+			    color: #FFF;
+			    border: 0;
+			    background: #00b38a;
+			    cursor: pointer;
+			}
+			.btn:hover{
+				background: #08d7a2;
+			}
+			.hot {
+				margin-top: -7px;
+			}
+			.hotSearch {
+				float: left;
+				font-size: 14px;
+			}
+			.hotSearch-content li{
+				list-style: none;
+				display: inline-block;
+				padding: 0 4px;
+				font-size: 14px;
+				color: #00b38a;
+			}
+			.hotSearch-content li:hover {
+				cursor: pointer;
+				border-bottom: 1px solid #00b38a;
+			}
+			.content-body-top-left {
+				float: left;
+				padding-left: 100px;
+				padding-top: 40px;
+			}
+			
+			.content-body-top-left ul:hover {
+				border: 1px solid #E8E8E8;
+				border-right: none;
+			}
+			.content-body-top-left li:hover {
+				color:#00b38a;
+				border-bottom: 1px solid #00b38a;
+
+			}
+			.content-body-top-left .li {
+				position: relative;
+			}
+
+			.li .selected {
+				font-size: 20px;
+				line-height: 20px;
+			}
+			.li img {
+				display: inline-block;
+			} 
+			.li li{
+				list-style: none;
+				display: inline-block;
+				padding: 3px 7px;
+				font-size: 14px;				
+			}
+			/*.arrow {
+				display: inline-block;
+				margin-left:20px;
+				margin-top:50px; 
+			}
+			.ul {
+				float: left;*/
+			}
+			
+
+			}
+			.li li:hover {
+				cursor: pointer;
+				color: #00b38a;
+				border-bottom: 1px solid #00b38a;
+			}
+			.content-body-top-right img {
+				padding-left: 80px;
+				padding-top: 63px;
+				height: 320px;
+				width: 780px;
+			}
+			.content-body-mid {
+				margin: auto 0;
+				padding-top: 30px;
+				padding-left: 85px;
+			}
+			.hotli ul {
+				border-bottom: 1px solid #E8E8E8;
+				width: 1200px;
+			}
+			.hotli li {
+				color: gray;
+				display: inline-block;
+				list-style: none;
+				padding:20px 30px;
+				cursor: pointer;
+			}
+			.hotli .selected {
+				border-bottom: 2px solid #333;
+				color: #333; 
+			}
+			.kuai1 {
+				float: left;
+				width: 305px;
+    			height: 200px;
+			    margin-left:50px;
+			    margin-top:30px; 
+			    padding: 20px 18px 0;
+			    border: 1px solid #EAEEED;
+			    background-color: #fff;
+			}
+			.time {
+				color: #EAEEED;
+			}
+			.gongzi {
+				color: red;
+				padding-left:80px; 
+			}
+			.kuai {
+				width: 1200px;
+				display: inline-block;
+			}
+			.kuaili {
+				margin-left: -40px; 
+			}
+			.kuaili li {
+				display: inline-block;
+				list-style: none;
+				font-size: 12px;
+				padding:5px 10px;
+				border:1px solid #EAEEED; 
+			}
+			.person img {
+				float: left;
+				width: 50px;
+				height: 45px;
+			}
+		
+			.li:hover .toggle {
+	          display: inline-block;
+		    }
+		      
+	      .toggle {
+	          position: absolute;
+	          top: 0;
+	          left: 320px;
+	          display: none;
+	          border: 1px solid #EAEEED; 
+	          background: #fff;
+		    }
+	      .toggle::before {
+	      	content: "444";
+	      	background: #fff;
+	      }
+	      .toggle li {
+	      	position: relative;
+	      	display: inline-block;
+	      }
+	      .toggle li:hover {
+	        background: red;
+	      }
+
+	      .lookup {
+	      	display: block;
+		    width: 342px;
+		    height: 42px;
+		    line-height: 42px;
+		    margin: 16px 442px 0;
+		    background: #FFF;
+		    border: 1px solid #00B38A;
+		    font-size: 16px;
+		    color: #00b38a;
+		    text-align: center;
+	      }
+	      .lookup:hover {
+	      	color:#fff;
+	      	background: #00B38A;
+	      	cursor: pointer;
+	      }
+	      .down {
+	      	height: 500px;
+	      	width: 1255px;
+	      	margin: 0 auto;
+	      	margin-top:50px; 
+	      }
+	      .friend {
+	      	
+	      	color: #333;
+	      	border-bottom: 1px solid #E8E8E8;
+	      }
+	      .friend span {
+	      	padding: 20px 0;
+	      	display: inline-block;
+	      	border-bottom: 2px solid #333 ;
+	      }
+	      .down-li {
+	      	float: left;
+	      }
+	      .zhankai {
+	      	float: right;
+	      	margin-top: 20px;
+	      }
+	      .down-li li {
+	      	display: inline-block;
+	      	font-size: 14px;
+	      	list-style:none;
+	      	padding:5px 10px 0 0;
+	      }
+	      
+	      .down-li li:hover {
+	      	color: #00B38A;
+	      	border-bottom: 1px solid #00B38A;
+	      	cursor: pointer; 
+	      }
+	      .down-bar {
+	      	margin-top:80px; 
+	      	border-top:  1px solid #E8E8E8;
+	      }
+	      .down-left {
+	      	margin-top:50px; 
+	      }
+	      .load {
+	      	float: left;
+	      	width: 20px;
+	      	height: 20px;
+	      	background: url(./sprite.png) 110px 40px;
+	      }
+	      .load div {
+	      	display: inline-block;
+	      	font-size: 12px;
+	      }
+	      .go-top {
+			position: fixed;
+			bottom: 50px;
+			right: 100px;
+	      }
+		</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top-left">
+			<a class="icon"><img src="./app_icon.png"><span class="lagouapp">拉勾APP</span></a>
+			<a class="access">进入企业版</a>
+		</div>
+		<div class="top-right">
+			<a class="enter">登录</a>
+			<a class="enrol">注册</a>
+		</div>
+	</div>
+	<div class="top-bar">
+		<div class="logo"><img src="./logo.png">
+			<div class="suggestCity">全国站<span class="changeCity">[切换城市]</span>
+			</div>		
+		</div>
+		<div class="top-text">
+			<ul>
+				<li class="top-text-selected" style="color: #333">首页</li>
+				<li>公司</li>
+				<li>校园</li>
+				<li>言职</li>
+			</ul>
+		</div>
+	</div>
+	<div 
+	class="content">
+		<div class="content-head">
+			<div class="search-wrapper">
+				<div class="search-box"><input class="input-content" type="text"><button class="btn">搜索</button></div>
+				<div class="hot">
+					<div class="hotSearch">热门搜索：</div>
+					<div class="hotSearch-content">
+						<ul>
+							<li>java</li>
+							<li>后端开发</li>
+							<li>移动产品经理</li>
+							<li>数据运营</li>
+							<li>产品经理</li>
+							<li>C++</li>
+							<li>PHP</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="content-body">
+			<div class="content-body-top-left">				
+				<div class="li">
+					<ul class="ul">
+						<li class="selected">技术</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>C++</li>
+						<li>区块链</li>
+					</ul>
+					<!-- <span class="arrow"><img src="./arrow.png"></span> -->
+						<div class="toggle">
+						<ul><li>666</li></ul>
+			          <ul>
+			            <li>1111</li>
+			            <li>1111</li>
+			            <li>1111</li>
+			            <li>1111</li>
+			            <li>1111</li>
+			            <li>1111</li>
+			            <li>1111</li>
+			          </ul>
+			        </div>
+				
+				</div>
+					
+				
+				
+				<div class="li">
+					<ul>
+						<li class="selected">产品</li>
+						<li>产品总监</li>
+						<li>产品经理</li>
+					</ul>
+				</div>
+				
+				<div class="li">
+					<ul><li class="selected">设计</li>
+						<li>UI设计师</li>
+						<li>交互设计</li>
+						<li>网页设计师</li>
+					</ul>
+				</div>
+				<div class="li">
+					<ul><li class="selected">运营</li>
+						<li>新媒体运营</li>
+						<li>编辑</li>
+						<li>数据运营</li>
+					</ul>
+				</div>				
+				<div class="li">
+					<ul><li class="selected">市场</li>
+						<li>市场营销</li>
+						<li>市场推广</li>
+						<li>市场策划</li>
+					</ul>
+				</div>
+				
+				<div class="li">
+					<ul><li class="selected">销售</li>
+						<li>销售专员</li>
+						<li>销售经理</li>
+						<li>销售总监</li>
+					</ul>
+				</div>
+				
+				<div class="li">
+					<ul><li class="selected">职能</li>
+						<li>HR</li>
+						<li>行政</li>
+						<li>财务</li>
+						<li>审计</li>3
+					</ul>
+				</div>
+				
+				<div class="li">
+					<ul><li class="selected">游戏</li>
+						<li>小游戏开发</li>
+						<li>U3D</li>
+						<li>游戏策划</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-body-top-right">
+				<img src="./Cgo.png">
+				<!-- <img src="./Cgo1.png"> -->
+			</div>
+			<div class="content-body-mid">
+				<div class="hotli">
+					<ul>
+						<li class="selected">热门职位</li>
+						<li>最新职位</li>
+					</ul>
+				</div>
+				<div class="kuai">
+					<!-- <div class="kuai1">
+						<div class="name">HTML5开发工程师<span class="time">[08:20发布]</span><span><img src="./icon_chat2.png"></span><span class="gongzi">8k-15k</span></div>
+						<div class="jingyan">经验3-5年/本科</div>
+						<div class="kuaili">
+							<ul>
+								<li>移动互联网</li>
+								<li>企业服务</li>
+								<li>内容</li>
+							</ul>
+						</div>
+						<div>
+							<div class="person"><img src="./4476.png"></div>
+							<div>斑马星空电子商务，生活服务</div>
+						</div>	
+						</div> -->
+					</div>
+					<div class="lookup">查看更多</div>
+				</div>
+			</div>
+		</div>
+		<div class="down">
+			<div class="friend"><span>友情链接</span></div>
+			<div class="down-li">
+				<ul>
+					<li>拉勾网</li>
+					<li>招聘</li>
+					<li>App下载</li>
+					<li>拉勾云</li>
+					<li>中大网校</li>
+					<li>人人都是项目经理</li>
+					<li>教师招聘</li>
+					<li>新疆人才网</li>
+					<li>研究报告</li>
+					<li>互联网一些事</li>
+					<li>人才招聘网</li>
+					<li>找工作</li>
+					<li>中国考试网</li>
+				</ul>
+			</div>
+			<div class="zhankai">展开<img src="./arrow_down.png"></div>
+			<div class="down-bar">
+				<!-- <div class="down-left">
+					<div class="load"><div>下载拉勾APP</div></div>
+					<div class="wechat"></div>
+				</div> -->
+			</div>
+		</div>
+	    <div class="go-top">回到顶部</div>
+	<script src="lagou.js">	
+
+	$(".go-top").click(function(){
+                $("html").animate({
+                    "scrollTop": 0
+                },1000)
+                $(window).scroll(function(){
+                    var a = $("html").scrollTop();
+                    console.log(a);
+                    console.log($("html").height());
+                })
+                $("html").scrollTop(0);
+            })
+
+	
+
+// var li_list = document.getElementsByClassName("li");
+// 	for (var i = 0; i<li_list.length; i++ ){
+// 		li_list[i].onclick = function() {
+// 			for (var t = 0; t < li_list.length; t++){
+// 					li_list[t].className ="";
+// 			}
+// 			this.className = "selected"
+//  }
+// }
+	</script>
+</body>
+</html>
