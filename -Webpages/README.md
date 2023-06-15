@@ -2,13 +2,13 @@
 包括小米官网，hao123，W3c，拉勾网，糗事百科等用Html，Css，Js，jQuery实现的页面</br>
 <strong>小米官网（比较完整，功能性多）</strong><br/>
 1.第一部分截图：
-![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi1.png)
+![image](https://github.com/Sestid/schoolProject/blob/main/xiaomi/xiaomi1.png)
 2.隐藏商品列表显示：
-![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi2.png)
+![image](https://github.com/Sestid/schoolProject/blob/main/xiaomi/xiaomi2.png)
 3.商品列表：
-![image](https://github.com/xiaola66/xiaomi/blob/master/xiaomi3.png)
+![image](https://github.com/Sestid/schoolProject/blob/main/xiaomi/xiaomi3.png)
 <strong>---一、W3C:</strong></br>
-![image](https://github.com/xiaola66/-Webpages/blob/master/W3c/W3c.png)</br>
+![image](https://github.com/Sestid/schoolProject/blob/main/W3c/W3c.png)</br>
 <strong>---二、hao123:</strong></br>
 1.主页面：</br>
 ![image](https://github.com/xiaola66/-Webpages/blob/master/hao123/hao1.png)</br>
